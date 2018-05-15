@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Auto Old Reddit",
+  "version": "1.0",
+
+  "description": "Automatically switches from *://www.reddit.com/* to *://old.reddit.com/* thereby reinstating the old style & custom css.",
+
+  "icons": {
+    "48": "icons/oldMain-48.png",
+    "96": "icons/oldMain-96.png",
+    "512": "icons/oldMain-512.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["AutoOldReddit.js"]
+    }
+  ]
+
+}
